@@ -1,0 +1,49 @@
+@import "../styleguide/styleguide.scss";
+
+body, h1, h2, h3, h4, h5, p {
+	font-family: $sans;
+}
+body {
+	margin: 0;
+  background-color: $grape;
+}
+.body-container {
+  header {
+    background: url(https://hd.unsplash.com/photo-1463950922781-0e6d07cbd146) no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    display: table;
+  }
+}
+.header-container {
+  display: table-cell;
+  vertical-align: middle;
+  .header-text {
+    font-family: $cursive;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 25px;
+  }
+  #reader {
+    padding: 0;
+    margin: 15px 0 0 0;
+  }
+  #happy {
+    padding: 5px 0;
+  }
+}
+
+// .texts-container {
+//   background-color: $paper;
+//   .texts-row {
+//     .texts-col {
+//       p {
+//         margin: 0;
+//       }
+//     }
+//   }
+// }

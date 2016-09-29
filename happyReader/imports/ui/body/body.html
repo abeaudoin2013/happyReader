@@ -1,12 +1,15 @@
 <body>
-  <div class="container">
+  <div class="container body-container">
     <header>
-      <h1 id="welcome"></h1>
+      <div class="header-container">
+        <h1 class="header-text" id="happy"></h1>
+        <h1 class="header-text" id="reader"></h1>
+      </div>
     </header>
     
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
+    <div class="container texts-container">
+      <div class="row texts-row">
+        <div class="col-md-12 texts-col">
           {{#each allTexts}}
             {{> texts}}
           {{/each}}
@@ -15,4 +18,5 @@
     </div>
 
   </div>
+  {{>footer}}
 </body>
