@@ -21,8 +21,12 @@ Template.texts.helpers({
 Template.texts.events({
   'click .text'() {
     // Set the clicked property to the opposite of its current value
-    Texts.update(this._id, {
-      $set: { clicked: ! this.clicked },
-    });
+    
+    // Texts.update(this._id, {
+    //   $set: { clicked: ! this.clicked },
+    // });
+		Router.route("/text", function () {
+			this.render("text");
+		});
   }
 });

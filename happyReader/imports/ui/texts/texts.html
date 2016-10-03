@@ -1,6 +1,12 @@
 <template name="texts">
 	<!-- With this code, if the checked property of a task is true, the checked class is added to our list item. Using this class, we can make checked-off tasks look different in our CSS --> 
-	<p class="text">{{display}}</p>
+	
+	<div class="text">
+		<div class="text-icon-container">
+			<i class="fa fa-book fa-5x text-icon" aria-hidden="true"></i>
+		</div>
+		<p class="text-title">{{display}}</p>
+	</div>
 
   <!-- there will be option bar for how to display it -->
 </template>
